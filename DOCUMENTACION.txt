@@ -1,0 +1,25 @@
+Como crear una Web, paso a paso
+- Primero definir como se verá la web, o sea como se verá su estética, los diseños
+  para dispositivos móviles y desktop.
+
+- Luego debemos de definir una paleta de colores, con los cuales trabajaremos, 
+  la misma empresa o comprador nos lo puede dar o nosotros lo decidimos.
+
+            - Para esta web trabajaremos con estos colores: 
+                - #4488ee
+                - #e2eaff
+                - #18233f
+
+
+- Decidir de que forma se trabajará si es mobile first o desktop first: 
+    - En este caso es Mobile First, por ello se comienz desde resoluciones pequeñas hacia grandes.
+
+- Y comenzamos a desarrollar la web de forma semántica:
+ 
+            <header class="header">
+                <input type="checkbox" name="" id="open-menu">
+                <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+            </header>
+
+    - El "role=button" indica a las tecnologías de accesibilidad que el label hace función de un
+      botón. 

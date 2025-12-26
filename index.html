@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Realizando nuestra Primera Página Web.">
+    <meta name="robots" content="max-image-preview:large">
+    <meta name="author" content="Flavio Silva">
+    
+    <meta property="og:title" content="Realizando Una Página Web">
+    <meta property="og:description" content="Realizando nuestra Primera Página Web">
+    <meta property="og:image" content="https://i.ytimg.com/vi/aPPh8j_qGUw/maxresdefault.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="La Academia del Developer">
+    
+    <title>Mi Primera Página Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="FONTS/Montserrat.css">
+    <link rel="icon" href="imagenes/icon_usuario.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <input type="checkbox"  id="open-menu" class="header_checkbox">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label> 
+
+        <div class="header__logo-container">
+            <img src="imagenes/Ada_13_logo.svg" alt="Logo de Ada 13" class="header__logo-img">
+        </div>
+
+        <nav class="header__navbar">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#about" class="header__nav-link link-width">About</a>
+                </li>
+
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                </li>
+
+                <li class="header__nav-item">
+                    <a href="#portfolio" class="header__nav-link">Portfolio</a>
+                </li>
+
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile" id="about">
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img 
+                    
+                    srcset="
+                                imagenes/Soy_Dalto_min.png 156w,
+                                imagenes/Soy_Dalto_medium.png 474w,
+                                imagenes/Soy_Dalto_max.png 900w
+                            "
+                    sizes="
+                                (max-width: 700px) 90vw,
+                                500px
+                          "
+
+                    src="imagenes/Soy_Dalto_min.png" 
+                    alt="Soy Dalto"
+                    class="profile__img" 
+                    draggable="false"
+                >
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>Who is Lucas Dalto?</h1>
+                        <p class="profile__text-description">
+                            <strong>Lucas Dalto</strong> is an Argentinian programmer and content creator, 
+                            known for his <em>YouTube channel Soy Dalto</em>, where he teaches 
+                            <strong>programming and web development for free</strong>. His content is 
+                            primarily aimed at beginners and is characterized by clear 
+                            and direct explanations about technologies like 
+                            <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>. 
+                            Through his courses, he has helped <em>thousands of people</em> 
+                            get started in the world of programming and improve their job opportunities.
+                        </p>
+                    </div>
+
+                    <div class="profile__skills-container">
+                        <h2>SKILLS</h2>
+                        <ul class="profile__skill-list">
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--70">70%</div>
+                                </div>
+                                <span class="profile__skill-name">JS</span>
+                            </li>
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--75">75%</div>
+                                </div>
+                                <span class="profile__skill-name">Python</span>
+                            </li>
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--90">90%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="profile__wrapper">
+            <div class="profile__img-container">
+                <img src="imagenes/Dalto_Cursos.png" alt="Soy Dalto" class="profile__img img--right" draggable="false">
+            </div>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>VIEWS</h1>
+                        <p class="profile__text-description">
+                            <strong>Dalto Courses</strong> is one of the most popular educational platforms 
+                            for <strong>learning programming and web development in Spanish</strong>. 
+                            Its courses have <em>millions of views on YouTube</em>, standing out for 
+                            their clear methodology, practical examples, and up-to-date content. 
+                            Thanks to its educational approach, <em>thousands of students</em> have been 
+                            able to start and improve their skills in 
+                            <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and 
+                            other key web development technologies.
+                        </p>
+                    </div>
+
+                    <div class="profile__skills-container">
+                        <h2>VIEW RANKINGS</h2>
+                        <ul class="profile__skill-list">
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--80">80%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--70">70%</div>
+                                </div>
+                                <span class="profile__skill-name">JS</span>
+                            </li>
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--75">75%</div>
+                                </div>
+                                <span class="profile__skill-name">Python</span>
+                            </li>
+
+                            <li class="profile__skill-item">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--90">90%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title" >PORTFOLIO SECTION</h2>
+        
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name" >PROJECT</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="form">
+        <h2 class="form__title">CONTACT</h2>
+        <form method="post" class="form__form">
+
+            <div class="form__input-container container-name">
+
+                <label for="name">Name
+                    <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="John" 
+                    required 
+                    minlength="3" 
+                    title="Write Your Name">
+                </label>
+                
+            </div>
+
+            <div class="form__input-container container-lastname">
+
+                <label for="last_name">Last Name
+                    <input 
+                    type="text" 
+                    id="last_name" 
+                    placeholder="Jackson" 
+                    required 
+                    minlength="4" 
+                    title="Write Your Last Name">
+                </label>
+                
+            </div>
+
+            <div class="form__input-container container-email">
+                
+                <label for="email">Email
+                    <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="alguien@gmail.com" 
+                    required 
+                    minlength="8" 
+                    title="Write Your Email">
+                </label>
+                
+            </div>
+
+            <div class="form__input-container container-reference">
+
+                <label for="reference">Contact Reference
+                    <input type="text" id="reference" list="reference-list" name="reference" title="Contact Reference" placeholder="Contact Reference" required>
+                    <datalist id="reference-list">
+                        <option value="Social Networks">Facebook / TikTok / Instagram / WhatsApp</option>
+                        <option value="known">Family / Friend</option>
+                        <option value="Others">Other means</option>
+                    </datalist>
+                </label>
+
+            </div>
+
+            <div class="form__input-container container-textarea">
+
+                <label for="messaje">Messaje
+                    <textarea 
+                        class="form-textarea"
+                        rows="4" 
+                        name="messaje" 
+                        id="messaje" 
+                        placeholder="Your Message..." 
+                        required 
+                        title="Write Your Message"></textarea>
+                </label>
+
+            </div>
+
+            <div class="form__input-container container-terms">
+
+                <label for="terms" class="label-terms">Accept the <a href="terms.html" target="_blank">terms and conditions</a> 
+                    <input type="checkbox" name="termns" id="terms" required>
+                </label>
+               
+            </div>
+
+            <div class="form__input-container container-submit">
+
+                <input 
+                type="submit" 
+                value="Submit Messaje" 
+                class="submit" 
+                title="Submit Messaje">
+
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-container">
+            <h2 class="footer__social-title">Social Networks</h2>
+            <div class="social-container__networks">
+                <a 
+                    href="https://wa.me/51953369819?text=Hola%20quiero%20mas%20información." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="link-social">
+                    <img src="imagenes/whatsapp.png" alt="Cuenta Oficial de WhatsApp" class="social-img">
+                </a>
+                <a 
+                    href="https://www.facebook.com/flavio.silva.602426" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="link-social">
+                    <img src="imagenes/facebook.png" alt="Cuneta Oficial de Facebook" class="social-img">
+                </a>
+                <a 
+                    href="https://www.instagram.com/flaviogse/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="link-social">
+                    <img src="imagenes/instagram.png" alt="Cuneta Oficial de Instagram" class="social-img">
+                </a>
+                <a 
+                    href="https://www.youtube.com/@soydalto" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="link-social">
+                    <img src="imagenes/youtube.png" alt="Canal Oficial de YouTube" class="social-img">
+                </a>
+            </div>
+        </div>
+
+        <div class="notifications">
+            <h2 class="footer__notifications-title">ADA</h2>
+            <form method="post" class="notifications__form">
+                <div class="notifications__input-container">
+                    <label class="notifications__label-email" >Email
+                        <input 
+                            type="email" 
+                            title="Write Email"
+                            class="email-notifications"
+                            required
+                            placeholder="alguien@gmail.com"
+                            minlength="6">
+                    </label>
+                </div>
+
+                <div class="notifications__form">
+
+                    <label for="terms-notifications" class="notifications__label-terms">Accept the <a href="terms.html" target="_blank" class="link-terms" >terms and conditions</a> 
+                        <input type="checkbox" name="termns" id="terms-notifications" required>
+                    </label>
+                
+                </div>
+
+                <div class="notifications__form">
+
+                    <input 
+                    type="submit" 
+                    value="Submit Email" 
+                    class="submit-notifications" 
+                    title="Submit Email">
+
+                </div>
+
+            </form>
+        </div>
+    </footer>
+
+</body>
+</html>
